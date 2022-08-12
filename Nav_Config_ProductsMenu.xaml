@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Nav_Config_ProductsMenu_natigation_part" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="566,912" sap2010:WorkflowViewState.IdRef="Nav_Config_ProductsMenu_natigation_part_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Nav_Config_ProductsMenu_natigation_part" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="566,953" sap2010:WorkflowViewState.IdRef="Nav_Config_ProductsMenu_natigation_part_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -59,19 +59,19 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Nav_Config_ProductsMenu_natigation_part" sap:VirtualizedContainerService.HintSize="476,847" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Nav_Config_ProductsMenu_natigation_part" sap:VirtualizedContainerService.HintSize="476,888" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Little Italy@1" sap:VirtualizedContainerService.HintSize="434,755" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="afbc0712-576c-42e2-a4cb-8363c60fbb41" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Little Italy@1" sap:VirtualizedContainerService.HintSize="434,796" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="afbc0712-576c-42e2-a4cb-8363c60fbb41" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,539" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,540" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -90,7 +90,7 @@
                 </ui:CursorPosition>
               </ui:Hover.CursorPosition>
               <ui:Hover.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16bf449f-b8b9-4b23-8c6b-baa62a9d8dfd" InformativeScreenshot="a09470b6518c2a212b4f0a5e631b87b9" Selector="&lt;html app='chrome.exe' title='Little Italy@1' /&gt;&lt;webctrl id='Path_382' tag='path' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16bf449f-b8b9-4b23-8c6b-baa62a9d8dfd" InformativeScreenshot="115fc9cd2ab33a1f014364aec0ddf205" Selector="&lt;webctrl aria-role='button' id='configurationDropdown' tag='A' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
