@@ -1,0 +1,158 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="566,1531" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="70">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,1466" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="Login" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[Login]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,87" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Login Details" WorkbookPath="Complete set up\Menu.xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Login]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,1247" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1132" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: prince Restaurant" sap:VirtualizedContainerService.HintSize="434,1040" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f46e55f0-71ac-4b3f-8909-b04a8fc030ee" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,824" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="Menu" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f46e55f0-71ac-4b3f-8909-b04a8fc030ee" Text="[row.Item(&quot;Username&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://prince.restrozap.biz/appconsole/login#!" DesignTimeRectangle="535, 359, 312, 50" ElementType="InputBox" FriendlyName="'INPUT userName'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='Username' /&gt;" Guid="def64832-f289-4039-8022-c31146273675" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATwAAAA2CAYAAABa6SXUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPZSURBVHhe7dnBaxNpGMfx/es8LR5kdwWRgJCy0CDx0iJUCsNCewmWQiAoOfWgwlYhFayHbS8WrD3YQ2nZRRoMtQ6FJSWk0CiG375PMjMkoeu6rAsmz/cDL82883amvXx5Z/Kd/ovdqi5V9pIDc6LaTFW7OlXtdqT1Zn+2/bKi/KM/wunnKg6tD0bmDqpTKu+GD+HaV24UNPv0pH+id+051dLDozXlw3HxxooOkqnetS5f0+LLj8mEOdXmwjV9P/Nc8UX3B+DG/xS8M21GIVw7p8l84guC13hU0OJWCFa4dvHpnmrzkWrv7cxw8BpPboV1Z9qtTOnefn+ud63SshZvh7glUxbGYnVFdwke4N5Q8DqdjuI4Vr1e1+Hh4WfH+fn5Z4IXtOpaL0fK5cMurbyhN2d2OgTnpynlfi6EUdL6n8nc9ILK96sqh/X5+RCmT2G+F7xQt3B+1uaGgvdOD24uayv8CdpfUb4ado8mCVrjyVwWwYPqnFaP9lROgzd6/+D4+PjC/5HBYIznsIZZy6xpg7Lg2Qlb1Gq11O12k9l/8PaxciPBWy0mwRvQ3qno6tK2PiRBGmJzSy/UPtnW3emKXlkYTRq8IH4WafZZ2O2lwft9RVd+2VDcOlO7GX7verinRTK9fnNDd+x+9rO0rbYGgjd6fwATxxpmLbOmDUYvC57V0Bb8K60XioqP1bDYmPfh8XF+Q03bjUXL2kze4enNQ+Uii9rfBC+Za24uKHd/Tx/sYCB4FtLafEFXr/eDZ+/57vz6Wq92+mO1NNV/b5dd66O2lmYVLaQ7PYIHeGRNs7alsuBZCb94ZzeguVVRPjy29h4Tw2PmZu99W9jV7T9UMZsv9ectONkjZUHRb6dDwdOnsEOcuaUHb8PnoeAFtu6HELw4xMu+qEgja47WND26g7QvNW6uqdE7uOiRNrk/gIllTbO2pbLg2XMvAEyawbYRPAATjeABcIPgAXCD4AFwg+ABcIPgAXCD4AFwg+ABcIPgAXCD4AFw46sF79LlH5NPAPBtIngA3CB4ANwgeADcIHgA3CB4ANwgeADcIHgA3CB4ANwgeADcIHgA3CB4ANwgeADcIHgA3CB4ANwgeADcIHgA3CB4ANwgeADcIHgA3PhqwQOAbx3BA+AGwQPgBsED4AbBA+AGwQPgBsED4AbBA+AGwQPgBsED4AbBA+DGhcGr1+vqdrvJEQCMP2uatS2VBS+OY7VareQIAMafNc3alsqC1+l0eiW0Bez0AIwza5i1zJpmbUtlwTN2wmpoi+y5l8FgMMZxWMOsZYOxM0PBA4BJRvAAOCH9BRY8sE4mjB8nAAAAAElFTkSuQmCC" InformativeScreenshot="6d856f83a7fff43c11002abbf2808e29.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='prince Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="547, 356, 51, 7" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Username' check:innerText='USERNAME' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAALCAYAAADbYxWQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ0SURBVEhL5ZTBa+JQEMb3r9tT2UPZ3UKRQEFZUCS9KAWLEBb0EipCQFpy8tAKawtpofaweqlQ66EeRNmlWCqtFWGJSARpKXw7k7xIkna3skf3g5D3Ji8z7zdv3rzDEus/gmvpeF9oiwlrBCOho0Ujq3MAORyD9CWGtaiK2gN/PoP8OWLb+FG+j1/YkvoVzGdaS75Xts4w5LEt9p2CMRJTjFFJf4JUuhdzEvsKFdGd/yPUKWI1Qb5ei+/RgnBjGFsKKqZjtS4KCJd+OsF960kBW1ePQOPskO/VDYI9cWkCcHfHCNNc3iAYYbJ9fVhH9uJJGFhj1DLrWHHhgvE9WhBuippCm2z6M7MIXL8UQ7ZOmyPf8kkbRlqBwacegOsfbdK6KVqFCHY7js32peaR5RMXJk6CrBexswhcr9cDP7PZ7C9wpMkNKpoCiUozqVVxPeXP5HxeFioqv4QtmoG2p0Oj9eG0KEUbjkjoe5JtPrh77MfzqNMWuOTCOlUFS2y+f5SaA3f1FMp3bWgvylLEJw0GA5vJf3K3h5ACcGVZwHlkNQtYyzXwKIL7xLbcOaxRAzvRAi45CSwXjjQ8VZA8pVN04X7QHfpaxXAyhWXSfyGKyQlx/ZtVbHM8fqsNWPDABeN75IebnEORD9F3L/ADlUC6CpOzrORRE3cO1weQFAb4A5ywmbUMpL02HnnigeOkGWlqTCEHju/l9rcrXDadp6xGnHs29/WEei4JJeOe4L/Akcw6NQvRFSUqFbsrkrzdUoq/0S3dgM908olN7N/S2AdH4nUfCW5IG+Um4u2IdK+iwcrghhM/Rt+evFaWb3XLJdMSwwG/AXP5fmyTovaVAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="f46e55f0-71ac-4b3f-8909-b04a8fc030ee" Text="[row.Item(&quot;Password&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://prince.restrozap.biz/appconsole/login#!" DesignTimeRectangle="535, 425, 312, 50" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='form-control' aaname='Password' /&gt;" Guid="0f5b4787-aadf-4eb7-9414-da8a4cf82595" ImageBase64="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" InformativeScreenshot="9355e6d1f2cba8e6c481e9ba56b221c8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='prince Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="535, 425, 96, 50" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' check:innerText='PASSWORD' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAA2CAYAAAAxpDyoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUNSURBVHhe7ZzvS2JZGMf3r+uV9CI0QcItKAIljIVkoCGIAWNAikCQlkAIpoJtggo2X8wIQ8LUMCRsFEUkK0kSLIYolGF89zk/7vV4rYVp3fW8eD5w4Z579Nxzn+/zS4T7ExirYEEso0OQh4cHVCoVFItFXF1d8dGHwxVEiCGEqNVqeHp60leZ/xtXEBEZQgymv7iCiOjgyOg/riAifzH9hwWxDBbEMlgQy2BBLIMFsQwWxDJYEMtgQSyDBbEMFsQyWBDLYEEsgwWxDBbEMqwRpFlroH6vB16aNEfzzZYe94LWo1yz3tRjS/iXgpwgNRjAgHuEMPRmDUd/6WmH1gVWRmg+eQjv89dPNxAZpu+NRzHkD8D3ywbOGnqydYvc+yh8wxMI/xzCgD+K+dytnCptRrvWq+cStIco1v/UFwT3h1gwrzWK2ElOw0d7DU6Ke+o9q2Ullb1Z45noGJ7Gwl4R9Zfm/aMYT2Zx2YM/XHsgyCx2jIcpbdNmp3ZR0mNB8+syfGMTCA7OY7+qLwqEsfzTyFzqMQmw84YMtHohh6VtMlzyAHUdGfXCanuN8zUMjazhTE0Rj8gnlYFiv9/pa4T5uXva71gIkcwJqka0Vb4sI+in57jRY2Hw9IkaCGrHWBwJYeHroxx2zbfucLaX7FjjtfRcENxmERtcRUEPpaGWQojtlaXB4p8MY8nPpnFkpiKRnhrqwQvpACIdi6vUJlNXi+5NEeN6vhwnsP4bRYkROSKSfNp4SuBD19NNKjuz8M0fQGjdZXBC7CW2p/by3LygtEnrJ8iB9Pg19FyQel5EwwYcp1cpQ3m1jJSZLCp6SqaysQCCiV0UrpUIJlVKQT5/HKkvRVS7cr2KCDcaRCSQQetCZD85hBSZIm4mhJT0DnEewOJ3cf4M0jmWkac61h0BZaxPBfA2p3LpS4LgZhcRr4P9ID0QROX/MOXj8Pgo5fs4MqdOESCjfprHwNxn6XlOitq6llOKRhm5DwlERI2gXP32wzEqxgNV/8hicdbJ9WnsX7bXljVDR4OIBOXBZWxNjWLlnE6lMygjO/VOifMcbeeSBo8kkPp1lY5lxChd+ebIkfS+XhSkdUz382SMH6QHgsSxTkaSHUvN6+V32J9re5agkA5hfLusRx6qF1inGuJb6i7+oiuSuX7QENSNBvLgybYhhDjhTboH1RyRhlQKuaP6FMBCvjsSJdK7jQhZou/VytiZJ0fwGN/yCPkHj5BpwOhGnMMpsvTAR98oHckPa8iIAzKtkQDnxyjcmAZUaaft5UIIqiN5us/kx3YjIdIXrZHLjLp5XyAM6dQJLzL/a0foMDgZOUbPuGUU65cEMdd4Lf+pILKIejcoW2BKKad0LlPYKBa/6QhqNXCUnpAeKdMQfX9ghjo2x+OuyTiikzHud0ZGD1IHN5RRnZlEFnjq6sY8LbDu4sLLB6g4m3I6pGGqc3pdr8HPMhMdQnYJ0myvYV+X5SK8t90qmggjOq1t/TKLhQjVDxk9ZKz31M87GY6MdbQ6K3+fyHmqTyvfjS5NINLSoK4ZLroFNqPGgUTpWJPuOf7uIwrGb4gugzd025tXG5PzTrTT4RuJIp76bMPvEKbXsCCWwYJYBgtiGSyIZbAglsGCWAYLYhksiGWwIJbBglgGC2IZLIhlsCCWwYJYBgtiGSyIZbiC8Ks17MAVhF8+YweuIPx6JjtwBRHwC8z6f3QIwvQfFsQqgL8Bg9oPdYTTCHEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f46e55f0-71ac-4b3f-8909-b04a8fc030ee" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://prince.restrozap.biz/appconsole/login#!" DesignTimeRectangle="535, 527, 312, 46" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Login' check:text='Login' /&gt;" Guid="bf427e20-3902-4ac3-8a27-48e97ee9055f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATwAAAAyCAYAAADBeGfCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQKSURBVHhe7dy/ahtZGMbh7bbJfegS9gqCS12Cy5Qu3W3SuVx1chXjYhEpjIpgxFbeKrgwigqDQggOSzCJWYIwsjSWZkbfnm9mPv0Zj+xJsMTq+PfCA5pzzowa8XJGHvkXIYSQJxIKjxDyZLJQeNFlW25eP5frV8/k+vdfAWAzuQ7TLtNOm8+08HSCogPgFddp86U3LbxkZ1d0AgBsMO02y7Tw2N0B8JLrNsus8IoWAoAHLBQeAO9ZKDwA3rNQeAC8Z6HwAHjPQuEB8J6FwgPgPQuFB8B7FgoPgPcsFB4A71koPADes1B4+H/ar8pgv2Ac+AkWCg8lVGTwZluGf/5WMLcKf0gUug/l6FRuC+eBH2Oh8FDCroSB+5D8e1AwtwpVGV/1ZPL1QAaF88CPsVB4KGHdhQc8LguFhxIeLryb44ZE1z0RvRV1iye9Uxkf370FXlzndnGXDQn2d9zLQOIPO9m69Fgu69lxXaKRzu9K0OnKRM/VDLoSvtuW/tz1gSIWCg8l3F94g3Y3/RD130vYacj4/ERiXS+upNrV2bqzbF3giurcreu0JOq7ha64dP3kYjdbm3+/A4n1PB3Uc/U97Fx9j7OtbB1QzELhoYR7Cu+wkZaRm1v8vq2qGzhXUu9lVNPjl26X5o4HJxIkx6YiwYUuLFF4+keM+XNre+k1+y0Z2hhQwELhoYTlhdfvfHYTPQlbi+OJv0+Tz1b0zr3+60Qm7nXcrtxdd9hMCu3Bwvuylx3P3H5xC2NXqrlxYJ6FwkMJywsv3Z11ZZwbT7Ss5Nzr5LZ3STFm13+o8GbzM/e+P5CxUHgoYXnhDc51h/dNwqPF8YTt6s7c6/ndXn5dLb0tpvCwKhYKDyUsL7zrZisptcnHF7m5ioy+6kmfZXzojmt1ibS1vjfuPFuXliaFh9WxUHgoISug700ZHm3PJL+8qMjtP1o6gcQXdQl0/HhPwisdcyX1aVZSww/f0rGrptwe6zV2ZHThyk4fTxlReFgdC4WHErICymdaSNW0uLSVLHFP4s5O7hm5Svoc3fy6wJXV2/T6FB5WxULh4RFlv7k9KPhL7IL8uvTxkqJCAx6DhcLDmrxIfz1xdfc7PPseMD7nAWKshoXCw9qk3+EFbidXl2H2r59umnWJBm44dLel+seN3DnAY7BQeFij7Lu+fEZdCd8+dBsM/DwLhYf1q23J8OiljM72JHizxY//sXIWCg+A9ywUHgDvWSg8AN6zUHgAvGeh8AB4z0LhAfCehcID4D0LhQfAexYKD4D3LLPCe/WscCEAbDTXbZZp4d28fl68GAA2mHabZVp40WWbXR4Av7hO026zTAtPoxPJTo/iA7DJXIdpl82XnWah8AghxOdQeISQJxKR/wDS1ZMzTCKV5AAAAABJRU5ErkJggg==" InformativeScreenshot="03972cfa0d4e70b46686f48f579ed597.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='prince Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="77ef699b6e772e987c02d5c73a88f7b5.png" Selector="&lt;html app='chrome.exe' url='http://littleitaly1.restrozap.biz/appconsole' /&gt;" Url="http://littleitaly1.restrozap.biz/appconsole" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>

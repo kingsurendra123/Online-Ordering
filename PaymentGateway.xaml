@@ -1,0 +1,234 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PaymentGateway" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="566,2480" sap2010:WorkflowViewState.IdRef="PaymentGateway_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="66">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="PaymentGateway" sap:VirtualizedContainerService.HintSize="552,2415" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Nawabi Hyderabad House Cincinnati" sap:VirtualizedContainerService.HintSize="510,2323" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9b25cd72-80eb-453c-98b5-74965479e902" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,2107" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="Payment" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'A  configurationDropdown'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Hover_1">
+              <ui:Hover.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Hover.CursorPosition>
+              <ui:Hover.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="09bd33dd-bc45-4eae-825d-18cdd453884a" InformativeScreenshot="115fc9cd2ab33a1f014364aec0ddf205" Selector="&lt;webctrl aria-role='button' id='configurationDropdown' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Hover.Target>
+            </ui:Hover>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Text" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="ClickText_1" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" Text="Advanced Settings">
+              <ui:ClickText.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:ClickText.CursorPosition>
+              <ui:ClickText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="173783b5-dfff-49d2-9c34-ed7b850eaca7">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ClickText.Target>
+            </ui:ClickText>
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[Payment]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="AdvancedPaymentGateway" WorkbookPath="Complete set up\Menu.xlsx" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Payment]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,1525" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1409" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NSelectItem DisplayName="Select Item 'Payment Gateway Provider'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="AuthorizeNet" ScopeIdentifier="9b25cd72-80eb-453c-98b5-74965479e902" Version="V1">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="3">
+                          <x:String>Vantiv</x:String>
+                          <x:String>AuthorizeNet</x:String>
+                          <x:String>Stripe</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="http://littleitaly1.restrozap.biz/AdvancedSettings#!" DesignTimeRectangle="422, 207, 288, 44" ElementType="DropDown" FriendlyName="'AuthorizeNet'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-select widget-select-default' aaname='Payment Gateway Provider' /&gt;" Guid="f37b39e4-a928-40c0-9757-0460d1e9aad4" InformativeScreenshot="654a01dde71e3d90ef57560ba26f2697.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nawabi Hyderabad House Cincinnati' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="434, 204, 139, 7" ElementType="Text" FriendlyName="'Payment Gateway Provider'" FullSelectorArgument="&lt;webctrl parentid='paymentgateway' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='paymentgateway' tag='LABEL' type='' class='' aaname='Payment Gateway Provider' check:innerText='PAYMENT GATEWAY PROVIDER' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI8AAAALCAYAAABGQt5dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUASURBVFhH7VdRSxtZFO6v2yfpg9QNiAQKEwoJMnlxCCQIQYgUgiIEghIICKvC2kIUqg/qS12qRRRWDFtEMVQ2BEqKJCAtgW/PuffcyZ0wE1P3NR8MmXtyZ+45537nO3deYIwxnokxecZ4NoLkae3D/T2B+JuUurzKOdo9+Q/fsTc/hfjWvYyBxpaH3NF3GQH1agqLx11clKfgHfTtGvr50gXdXlQwMaPX4Kt6JbbMPpr+ei3U5rKo/bWp581M+8+o+Ta+nWM1I+9zUnCK+7juyn8Kg77T+C3PT2Di5TRi/NzbQ7QH4s9TDPVKQvus8BPHxcEccMw/9aD3BaszU/1x9wSLzjrqJqb2R+Tcd2j4MRICufCwuHuLjopd/OIru47TbzI/Ktb2IbzZHTT0LA1j47jKl2Sw35uGM1dA9Uz2KST24XwII49aRCOQuK87tFgW7mtKhpgCyeF7SQyT57fBQP5ZR/zVtE8ed7el7QZkm3xNDvp2IY8Mm7u09uAzjMdLlJwstr/KmNA5qyA2R0SUcajvCvTsywp8bgzEr0B+OYYsPV4rYb2bfSzg6EEN8OPTCmKZLJz8RyKAhl1gfM/FFUAgF0xyjpnfa/l1tY4Y+8WxugXs/St2Qud6E64qOiL2shfIQ/sgr4s4QB7rvb0uTssp7V9Y7MP4QBhKnus/+lXVeJ8WVUlg1ap83lS2q8R80nMvymRbztJCUoFcscsFrFbYRsMI8ri7l6jN51FTyRmNPJ2jQjipGFIlUb6PRJ5HKgpDFioAd+ucNlgI80BK4hOJY0xj4479zmOvrYx6wzNUVA9cXAMFxQjkooujQkreYfl19w7x4gnaEbFelKko/xbyVr+I1fIjijwMVieOYQTyBFSW8OLm5gZ8PT4+6snJAkprFSwtpBHPM6N52j02ZldwTFO4CpyKcZCgkuMhyewXE5OndkfJylMrYAM5mFs+QYMIYMjTl+pNrQYmieSDN8/vGo08bPer4UpanFy6vQ3xPYw8vkwXsadaBW1oXpOlXs3Sxuo1l87or7MynPeiSkwyUVu/4gU8P+naxWSB4p7MlFXOF6kdOZVLaVtp5MhWWivDS+qCCsRqwc8Nt82kdAJS2yTl/AdP8EkQQh6Tg7DYLT6USnk4vC/07k6nozgzVHl8UMVNLhyi+dBFp32CpRlaTKqa0ax5OpkCRR6KpU5KwzLKvybpw5VH25ofKPkfSIWerTx8NuEKptuhvo+gPATt9y025qTtkRK4VOGGTAz2I1aljed1bnfg2m2zd44lUh1/bCMsF2qTV4iwLRyvpCm3utVFqaxRHka9mlbq2tgitZVOMJQ8Rj3DYmfbMrXgFuUtWcbpQMcdiTzc63J/nuP0s762i4m+Y4TBijDkUexfKCInCjQqeVSQ8ynEZp4mT9SZJy5KONz30cijyELqk/NViyqcWoJnyKTOKmmUDsw6H+n/tOUTrWOTyUYkecQvPmQ7dM/Kqc48RCpzeCZ0rsm3DBHTFATnvLzeVyBGFHl+4czDLTO+dqmVTPA0efiQyAdNS2kCkkiIJI86B0z7m2WTJ+xrK5BE9uXVCORhRH2BPOl7CHkGvzgU+CtKDvsCrvYJkyt+bl5atIDPH0nT0v4PeQjNGh3CzaH9yS/Le2zPTmHSP/sQ/H3l91pfcW/yWP0sa4fF7j9H6LWwTQVhlJYRJM8YY/wCxuQZ45kA/gO9vy2XeUi/2gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Value'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="9b25cd72-80eb-453c-98b5-74965479e902" Text="[row.item(&quot;Environment&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://littleitaly1.restrozap.biz/AdvancedSettings#!" DesignTimeRectangle="734, 275, 601, 44" ElementType="InputBox" FriendlyName="'INPUT value_Val.V0'" FullSelectorArgument="&lt;webctrl id='value_Val.V0' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='value_Val.V0' tag='INPUT' type='text' class='form-control' aaname='Value' /&gt;" Guid="a61f1fe9-a0ad-46b1-9feb-df0905b318a9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAl0AAAAwCAYAAAArd8+GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANrSURBVHhe7dzBS5RpHMDx/es8iYdQApFwoT0toZdiQQi8bJcghEAEYaFTh1qwDnUoLyvUaYWNjWJxSAoGYVEGhaZw+O08M887zTheXGeeRD4f+ME877zi9cvvffWHAABg7EQXAEABA9HVbDajXq9HrVaLnZ0dY4wxxhhzxkkdlXoqdVW/XnSlL9JNjUYjWq1WvgoAwFmkjko9lbqqP7x60ZWKLN0AAMD5pa5KfVXpRVeqMRsuAIDRSF2V+qrSi670DBIAgNHp7yvRBQAwJqILAKAA0QUAUIDoAgAoQHQBABQgugAAChBdAAAFiC4AgAJEFwBAAaILAKAA0QUAUIDoAgAoQHQBABQwsuiqP12KieU/4jCfe47fx9rcfKz9nc/Z2/X5mJhaia3P+UK2vToTC0/38inbex4LU+uxnY+Vzu9cffPt89TMwNw/+QMAAN/J6DZd+y/j1tRyPNvP58r2ekzeeBK7+djx+XXcmf4prv44E7deHOSLXeeKrvwZAOCiGV10xVFsLp+MqK+xdW82rv/+KZ+7vrxaicmbz2N3ayUmbr+M/k4TXQDAZTTC6PoWU/V87my0hrZf7RC7m+Oss/Faio2+xhJdAMBlNNLoiuM3cX96MR597B4PN38dfs9r4DHk8CZsdO90Dd8PAPC9jDa62tIL8tcepog6iGe3Z+POq6/dL7L9F8uDIXbinS+bLgDgMhp5dMWHx3Ft7kG8TRut6XYoHefrHXuxcbN/G1XNfKy9695xanT9m6LrtL90nM2BJ7oAgItt9NEVn+LRjflY+GUxrqy/z9eyj0/i+vRwPKXtWHXvqdEVB7G5PBtXV/+M/Rxxh/88joW+R5miCwC4yMYQXfkRYt/2qrL78OeYvPc6vuRzz7sHcSVtx9pBlaJrYAtWhdRRLTbuLsZkvj45txS//XXU/a5t+J0u/6cLALg4xhJdAAAMEl0AAAWILgCAAkQXAEABogsAoADRBQBQgOgCAChAdAEAFCC6AAAKEF0AAAWILgCAAkQXAEABogsAoIBTo6tWq0Wr1conAADOI3VV6qtKL7rq9Xo0Go18AgDgPFJXpb6q9KKr2Wx2aizdYOMFAPD/pI5KPZW6KvVVpRddSfoiFVm6KT2DNMYYY4wxZ5vUUamn+oMrGYguAADGQ3QBAIxdxH8vcU0AmFfudAAAAABJRU5ErkJggg==" InformativeScreenshot="2a6fe0c99d764744cf80863efb221314.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nawabi Hyderabad House Cincinnati' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="734, 275, 64, 45" ElementType="Text" FriendlyName="'Value'" FullSelectorArgument="&lt;webctrl aaname='Value' parentid='payment-kv-container' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Value' parentid='payment-kv-container' tag='LABEL' type='' class='' check:innerText='VALUE' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAxCAYAAABj/A/AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVGhD7ZrBS+NAFIf3r+sp9CAtQilSwT0t0l6UhYKQy3oRpCAUobDgyYMuVA960F4s6GkLyoqytFgUQmGplBas0vLbTOZlTF56kQhK+z4I5E1Syvvym0kO8wVCCBHCCAkZDodwHAetVgvNZnMmDyNEyVAier0exuMxjc4eRohKhpIx6xghKh2znAwfI0TNH0GERBAhDBHCECEMEcIQIQwRwhAhDBHCECEMEcIQIQwRwoglxDksImGfoU+1YXSL7WwO23+oJq4rOSSSJdSfaIBolNPIH3aoIjrHyCcraFDp4/1n+er1PJkOHVv8B28kXkK6p1hN2jjqUu3TqMBaPkCbSo+nC6ynvmJ+MY3Vk0ca1MQSQufvRcwpM0DN5g2+oL6ZwdKvB6o1z+clWCvHaNdLSKydIuhwioS8NupQ7SUhkhpX0gaJ85JSRDXQ/1QJwegKW6kC9u512a/9iK4roakVTdD7rSHR+99KfCEuarFc2FUNPuJoLYP18xd9geie2GFJbI2ZroQo7vaxkN3BtUpCym1iROMeHVRXgk/RP9y30I2+Y6KQf0rIpDdShuR/ZiF4wN5yDvnvBcxVbmmMuD/AUiramEqVf+9EIW7aanYG8+Xf6JLg/t995APT8xMLoWkReOo+7d1vsDYv8Ey14WYHcypVbrNKSCg9fpODFqobBVg0bmWL+Hk50NdcomvIR3+HTCEihCFCGCKEIUIYIoQhQhgihCFCGCKEIUIYIoQhQhhGiGy60xghsi1TY4TIxl2NEaKQrd2Brd2CRoQwREgI4D/JCdFR4iz/ZAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Value'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9b25cd72-80eb-453c-98b5-74965479e902" Text="[row.item(&quot;ApiLoginId&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://littleitaly1.restrozap.biz/AdvancedSettings#!" DesignTimeRectangle="734, 343, 601, 44" ElementType="InputBox" FriendlyName="'INPUT value_Val.V1'" FullSelectorArgument="&lt;webctrl id='value_Val.V1' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='value_Val.V1' tag='INPUT' type='text' class='form-control' aaname='Value' /&gt;" Guid="6e6ba105-2b62-4279-ab85-62e005aa349a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAl0AAAAwCAYAAAArd8+GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANrSURBVHhe7dzBS5RpHMDx/es8iYdQApFwoT0toZdiQQi8bJcghEAEYaFTh1qwDnUoLyvUaYWNjWJxSAoGYVEGhaZw+O08M887zTheXGeeRD4f+ME877zi9cvvffWHAABg7EQXAEABA9HVbDajXq9HrVaLnZ0dY4wxxhhzxkkdlXoqdVW/XnSlL9JNjUYjWq1WvgoAwFmkjko9lbqqP7x60ZWKLN0AAMD5pa5KfVXpRVeqMRsuAIDRSF2V+qrSi670DBIAgNHp7yvRBQAwJqILAKAA0QUAUIDoAgAoQHQBABQgugAAChBdAAAFiC4AgAJEFwBAAaILAKAA0QUAUIDoAgAoQHQBABQwsuiqP12KieU/4jCfe47fx9rcfKz9nc/Z2/X5mJhaia3P+UK2vToTC0/38inbex4LU+uxnY+Vzu9cffPt89TMwNw/+QMAAN/J6DZd+y/j1tRyPNvP58r2ekzeeBK7+djx+XXcmf4prv44E7deHOSLXeeKrvwZAOCiGV10xVFsLp+MqK+xdW82rv/+KZ+7vrxaicmbz2N3ayUmbr+M/k4TXQDAZTTC6PoWU/V87my0hrZf7RC7m+Oss/Faio2+xhJdAMBlNNLoiuM3cX96MR597B4PN38dfs9r4DHk8CZsdO90Dd8PAPC9jDa62tIL8tcepog6iGe3Z+POq6/dL7L9F8uDIXbinS+bLgDgMhp5dMWHx3Ft7kG8TRut6XYoHefrHXuxcbN/G1XNfKy9695xanT9m6LrtL90nM2BJ7oAgItt9NEVn+LRjflY+GUxrqy/z9eyj0/i+vRwPKXtWHXvqdEVB7G5PBtXV/+M/Rxxh/88joW+R5miCwC4yMYQXfkRYt/2qrL78OeYvPc6vuRzz7sHcSVtx9pBlaJrYAtWhdRRLTbuLsZkvj45txS//XXU/a5t+J0u/6cLALg4xhJdAAAMEl0AAAWILgCAAkQXAEABogsAoADRBQBQgOgCAChAdAEAFCC6AAAKEF0AAAWILgCAAkQXAEABogsAoIBTo6tWq0Wr1conAADOI3VV6qtKL7rq9Xo0Go18AgDgPFJXpb6q9KKr2Wx2aizdYOMFAPD/pI5KPZW6KvVVpRddSfoiFVm6KT2DNMYYY4wxZ5vUUamn+oMrGYguAADGQ3QBAIxdxH8vcU0AmFfudAAAAABJRU5ErkJggg==" InformativeScreenshot="54b81de9f0915e0d86babddbb2b9fa52.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nawabi Hyderabad House Cincinnati' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="734, 343, 64, 45" ElementType="Text" FriendlyName="'Value'" FullSelectorArgument="&lt;webctrl aaname='Value' idx='2' parentid='payment-kv-container' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Value' type='' parentid='payment-kv-container' tag='LABEL' class='' check:innerText='VALUE' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAxCAYAAABj/A/AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVGhD7ZrBS+NAFIf3r+sp9CAtQilSwT0t0l6UhYKQy3oRpCAUobDgyYMuVA960F4s6GkLyoqytFgUQmGplBas0vLbTOZlTF56kQhK+z4I5E1Syvvym0kO8wVCCBHCCAkZDodwHAetVgvNZnMmDyNEyVAier0exuMxjc4eRohKhpIx6xghKh2znAwfI0TNH0GERBAhDBHCECEMEcIQIQwRwhAhDBHCECEMEcIQIQwRwoglxDksImGfoU+1YXSL7WwO23+oJq4rOSSSJdSfaIBolNPIH3aoIjrHyCcraFDp4/1n+er1PJkOHVv8B28kXkK6p1hN2jjqUu3TqMBaPkCbSo+nC6ynvmJ+MY3Vk0ca1MQSQufvRcwpM0DN5g2+oL6ZwdKvB6o1z+clWCvHaNdLSKydIuhwioS8NupQ7SUhkhpX0gaJ85JSRDXQ/1QJwegKW6kC9u512a/9iK4roakVTdD7rSHR+99KfCEuarFc2FUNPuJoLYP18xd9geie2GFJbI2ZroQo7vaxkN3BtUpCym1iROMeHVRXgk/RP9y30I2+Y6KQf0rIpDdShuR/ZiF4wN5yDvnvBcxVbmmMuD/AUiramEqVf+9EIW7aanYG8+Xf6JLg/t995APT8xMLoWkReOo+7d1vsDYv8Ey14WYHcypVbrNKSCg9fpODFqobBVg0bmWL+Hk50NdcomvIR3+HTCEihCFCGCKEIUIYIoQhQhgihCFCGCKEIUIYIoQhQhhGiGy60xghsi1TY4TIxl2NEaKQrd2Brd2CRoQwREgI4D/JCdFR4iz/ZAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Value'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="9b25cd72-80eb-453c-98b5-74965479e902" Text="[row.item(&quot;TransactionKey&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://littleitaly1.restrozap.biz/AdvancedSettings#!" DesignTimeRectangle="734, 411, 601, 44" ElementType="InputBox" FriendlyName="'INPUT value_Val.V2'" FullSelectorArgument="&lt;webctrl id='value_Val.V2' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='value_Val.V2' tag='INPUT' type='text' class='form-control' aaname='Value' /&gt;" Guid="f6ba594b-8d6a-4176-85b8-4988b4c61aa0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAl0AAAAwCAYAAAArd8+GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANrSURBVHhe7dzBS5RpHMDx/es8iYdQApFwoT0toZdiQQi8bJcghEAEYaFTh1qwDnUoLyvUaYWNjWJxSAoGYVEGhaZw+O08M887zTheXGeeRD4f+ME877zi9cvvffWHAABg7EQXAEABA9HVbDajXq9HrVaLnZ0dY4wxxhhzxkkdlXoqdVW/XnSlL9JNjUYjWq1WvgoAwFmkjko9lbqqP7x60ZWKLN0AAMD5pa5KfVXpRVeqMRsuAIDRSF2V+qrSi670DBIAgNHp7yvRBQAwJqILAKAA0QUAUIDoAgAoQHQBABQgugAAChBdAAAFiC4AgAJEFwBAAaILAKAA0QUAUIDoAgAoQHQBABQwsuiqP12KieU/4jCfe47fx9rcfKz9nc/Z2/X5mJhaia3P+UK2vToTC0/38inbex4LU+uxnY+Vzu9cffPt89TMwNw/+QMAAN/J6DZd+y/j1tRyPNvP58r2ekzeeBK7+djx+XXcmf4prv44E7deHOSLXeeKrvwZAOCiGV10xVFsLp+MqK+xdW82rv/+KZ+7vrxaicmbz2N3ayUmbr+M/k4TXQDAZTTC6PoWU/V87my0hrZf7RC7m+Oss/Faio2+xhJdAMBlNNLoiuM3cX96MR597B4PN38dfs9r4DHk8CZsdO90Dd8PAPC9jDa62tIL8tcepog6iGe3Z+POq6/dL7L9F8uDIXbinS+bLgDgMhp5dMWHx3Ft7kG8TRut6XYoHefrHXuxcbN/G1XNfKy9695xanT9m6LrtL90nM2BJ7oAgItt9NEVn+LRjflY+GUxrqy/z9eyj0/i+vRwPKXtWHXvqdEVB7G5PBtXV/+M/Rxxh/88joW+R5miCwC4yMYQXfkRYt/2qrL78OeYvPc6vuRzz7sHcSVtx9pBlaJrYAtWhdRRLTbuLsZkvj45txS//XXU/a5t+J0u/6cLALg4xhJdAAAMEl0AAAWILgCAAkQXAEABogsAoADRBQBQgOgCAChAdAEAFCC6AAAKEF0AAAWILgCAAkQXAEABogsAoIBTo6tWq0Wr1conAADOI3VV6qtKL7rq9Xo0Go18AgDgPFJXpb6q9KKr2Wx2aizdYOMFAPD/pI5KPZW6KvVVpRddSfoiFVm6KT2DNMYYY4wxZ5vUUamn+oMrGYguAADGQ3QBAIxdxH8vcU0AmFfudAAAAABJRU5ErkJggg==" InformativeScreenshot="32387de6ea191501e546828923c8c1fd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nawabi Hyderabad House Cincinnati' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="734, 411, 64, 45" ElementType="Text" FriendlyName="'Value'" FullSelectorArgument="&lt;webctrl aaname='Value' idx='3' parentid='payment-kv-container' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Value' type='' parentid='payment-kv-container' tag='LABEL' class='' check:innerText='VALUE' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAxCAYAAABj/A/AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVGhD7ZrBS+NAFIf3r+sp9CAtQilSwT0t0l6UhYKQy3oRpCAUobDgyYMuVA960F4s6GkLyoqytFgUQmGplBas0vLbTOZlTF56kQhK+z4I5E1Syvvym0kO8wVCCBHCCAkZDodwHAetVgvNZnMmDyNEyVAier0exuMxjc4eRohKhpIx6xghKh2znAwfI0TNH0GERBAhDBHCECEMEcIQIQwRwhAhDBHCECEMEcIQIQwRwoglxDksImGfoU+1YXSL7WwO23+oJq4rOSSSJdSfaIBolNPIH3aoIjrHyCcraFDp4/1n+er1PJkOHVv8B28kXkK6p1hN2jjqUu3TqMBaPkCbSo+nC6ynvmJ+MY3Vk0ca1MQSQufvRcwpM0DN5g2+oL6ZwdKvB6o1z+clWCvHaNdLSKydIuhwioS8NupQ7SUhkhpX0gaJ85JSRDXQ/1QJwegKW6kC9u512a/9iK4roakVTdD7rSHR+99KfCEuarFc2FUNPuJoLYP18xd9geie2GFJbI2ZroQo7vaxkN3BtUpCym1iROMeHVRXgk/RP9y30I2+Y6KQf0rIpDdShuR/ZiF4wN5yDvnvBcxVbmmMuD/AUiramEqVf+9EIW7aanYG8+Xf6JLg/t995APT8xMLoWkReOo+7d1vsDYv8Ey14WYHcypVbrNKSCg9fpODFqobBVg0bmWL+Hk50NdcomvIR3+HTCEihCFCGCKEIUIYIoQhQhgihCFCGCKEIUIYIoQhQhhGiGy60xghsi1TY4TIxl2NEaKQrd2Brd2CRoQwREgI4D/JCdFR4iz/ZAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9b25cd72-80eb-453c-98b5-74965479e902" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://littleitaly1.restrozap.biz/AdvancedSettings#!" DesignTimeRectangle="1267, 540, 68, 35" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl parentid='btnSave' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='btnSave' tag='BUTTON' type='button' class='btn btn-outline' aaname='Save' check:innerText='Save' /&gt;" Guid="bebb3293-1509-46ec-9c49-881ed723c6ad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAnCAYAAACsTw7IAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANSSURBVGhD7Zqxa9tAFIfvz9Aa6GLoUG8xLZQIUrAgQw2B1lvwFDQVEUqqrYgUjKdiOhTjIaBudiGgdJKXgDMUlKHgtJgqgwcPGTSEVEOGX+9JZ1t2nKjUEST4PjjQ6Z6F3+d3TwaJQXIrUlAKU4J+/fyNd28/4IX6Cs+flpZqUM6UOzlIMhZECxT0tf0Nl5d/xNnlgXKm3MlBUtJYENmjgGWHHJCLEWNBZG4ZK2cWckAuRowF0T6UxCRdSEFzkIJSkIJSkIJSkIJSkIJSkIJSyFZQ0EPrfQXquspHCfpHF8MrsfZAyFCQh9qqAm3PQW8YYHjagrmmQNl2EIiIh0B2gr5bUJiJrphGnDqoVW14F2LOGR7bsLZGFebAvwjQbdbg9GnRRb3aQPc8jh3Tp+u00AvFfNiFXdVRokrdMtDoDMXC4mQnqN+Aykqwz8R8Dv6XMhRFhdF04HZcOE0D6poO/SWDdRxFoFFkqLSna86r5qHsuoj8nNkoKysocWHemQ/vsAF9laGw58XrC5KdIP71unsqF5CDtl2D3ekhSPafwIHO8jCPptMIj0zk2UgQD2tXwIoNrmoE37pP8qid0HEAZ5tB+zxZjRjYKDENDarCBclQUEw48NBqmtA3cnG1HIhkji0wxeLpzuLBUiaCYpGTZMOOCeVJTXyuC4vLrHxyowqcDBvms8Q1FiBzQUkCnlye6XBox5CgcaJJqEKSyYVwdxWoUZXEx1pzVDEkKIfSTo33pOsj6mMLkp2gqJHyO5iYxnRhsgLqP/gh71HavG0QnZ/59U9qyJPMCxcGq6A1btpxj9IPZ7pNOITX6cK/g9tldoLO+dZQFJT3fdEsQ/j7vCmvjqqG+ge/7W9YcAciYuDC2lRRmKoggotYz8N4w/vRjmjOguBA59fU0eqLs1dDOLsFsE070bf+n+wEccJTG0ZxBYxXBI2VogEneVe78tHa0bAi1pXHZdRPerA3r/cPv6nxGAVmZ6ZaOH7bgPYovgbF5F7Xp/5KLEKmgv6dEMEdJBQGwVR13QX3RND9RQpKQQpKQQpKQQpKQQpKQQpKQQpKYa4g+Ww+5sZn8/Ltjpgb3+6Q7welvB9E0ALZoyDah8s0KGfKPSmHmBIkuY4UdCvAX0RaD2WXYZnqAAAAAElFTkSuQmCC" InformativeScreenshot="dbf100c9edcd5683d56364807ffe4575.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nawabi Hyderabad House Cincinnati' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9b25cd72-80eb-453c-98b5-74965479e902" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://littleitaly1.restrozap.biz/AdvancedSettings#!" DesignTimeRectangle="678, 505, 58, 40" ElementType="Button" FriendlyName="'Yes'" FullSelectorArgument="&lt;webctrl aaname='OK' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='OK' type='' tag='BUTTON' class='confirm' check:innerText='Yes' /&gt;" Guid="9b401bb2-ee39-4333-acfb-4c88cb35fc44" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAAsCAYAAAA93wvUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMKSURBVGhD7Zrfa9NQFMfzZ6lTJ6ivOkVZwcftoU86GXQMHwa2+CRUBhk+CBuDQWGjUBAZdi/rS2BQoWOwEtgIVoZ9KN3IfqXr9vV8s6RNtYJE29kkF76lOefc0M895x4SehU444KSj7PzC5yeXeCkcY4ja/BFDvKQi3zk5LDBedEUBwO/HzSgV09R+naML1+PBl7kIA+5yEdO8iou9MFJ0w5IL3zGo6fPcefWEwwPPR54kYM85CIfOcmriOyVoPHFKxX37z7D7RsjuHntQWBEHnKRj5zkVVj7LAOuyD1xuoHdVm9QZSfy+kMbnpzkVbjxuQosBwYEDdqVy0ZO8irH0vXYALgXmO1uk4Ii8pGTvArrnd3PdfwcHCS5fOSNwL2OoCoCj8Aj8Ag8kIrA/zn4/CbM4yrW33TaY5my2CvIT3fa+60eZjyF9T15z9U/IdayqdBqgLW14rFdjXoILtmdL8NCHZqT9VhmV66lChKemJkVrJeqUgUNWGYdhpZDcrTtHx5NI6NVfu/3qZ6CDw/NIF+RDOs5ybCT7dJS259Yg2GJba+M/OISFnNFGKZUyf4m5uyYODJ6AzAr0JZXsLhaRo3x3nv4VI/BRbOy15l1+dFWs4KPE21fRhfIPQ1T3vgJWYymmPMzcr2AoiyEWVxo+ZO5MozSGpLeOT7Ue3DJWpaAMrwALpRlFJFfLXRI32/Hzm0cyswGattFZN+nMN6a/3fqA7hIZdaryHfsTQe8VoGx86u2cmknLo6X6hqKO3WYUuZoHkJfTnnu40/9AbfLXcq8w+7s/23uf69dlb1cQHZ2Wr5PYup1GlNjri+Odxt1KQe3B/jXFYK7XV4ymFMvS5gdfEtKuynVYXd+pyEaBaeTT+JDSfyDDs4MJrO7MKWZtYY89GhqvBUTe1u47PTusDr9ftUf8D/QeMJb0l00lkIyMdnd50P/DXi/FYFH4BF4BB5IReAReAQeIvDQ/k0c2oMBoT0KEtrDP6E97sX3fBeeK8EyYAAbALvfoIsc5CEX+chJ3pAe6QR+AJyO6Sh/GCujAAAAAElFTkSuQmCC" InformativeScreenshot="a9ad9a5de57a2bcf5c0101c6cd7f6c36.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nawabi Hyderabad House Cincinnati' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="65ba963cd5af7b47ac5fb392cf47c84b.png" Selector="&lt;html app='chrome.exe' title='Nawabi Hyderabad House Cincinnati' /&gt;" Url="http://littleitaly1.restrozap.biz/Order/Orders#!" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

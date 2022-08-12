@@ -1,0 +1,312 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Menu_Item" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="566,3730" sap2010:WorkflowViewState.IdRef="Menu_Item_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="72">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Menu_Item" sap:VirtualizedContainerService.HintSize="552,3665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Little Italy@1" sap:VirtualizedContainerService.HintSize="510,3573" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,3357" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="Item" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ClickType="Single" DisplayName="Click '+ Add Menu Item'" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="1174, 349, 153, 35" ElementType="Button" FriendlyName="'+ Add Menu Item'" FullSelectorArgument="&lt;webctrl parentid='groupmenuItems' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='groupmenuItems' tag='BUTTON' type='button' class='btn btn-outline' aaname='+ Add Menu Item' check:innerText='+ Add Menu Item' /&gt;" Guid="278f1a52-d9e7-4448-8e42-0332d2a40d46" ImageBase64="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" InformativeScreenshot="3bf70e7365bc125b0abb46baacf8a14a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:ReadRange AddHeaders="True" DataTable="[Item]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="ProductMenu" WorkbookPath="Complete set up\Menu.xlsx">
+              <ui:ReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ReadRange.Range>
+            </ui:ReadRange>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Item]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,2816" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,2700" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Text="[row.Item(&quot;MenuItemName&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="308, 278, 363, 44" ElementType="InputBox" FriendlyName="'INPUT Name'" FullSelectorArgument="&lt;webctrl id='Name' parentid='menudetails' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Name' parentid='menudetails' tag='INPUT' type='text' class='form-control' aaname='Name * ' /&gt;" Guid="91514cea-4bfe-47d7-9a5e-b82e855d315c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW8AAAAwCAYAAADek/uCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARxSURBVHhe7d3tb1NlGMdx/zpf6iuyRA1ERCTzgY3gIMsEp+JTjMQs0anEJ0TdJIuQEJQICs7hnMwFFUW2QgAtbAitY1uh7S76u3vO2TltiYx07Nzy/STXst49HQndvr1zepLeMz8/b+Vwyskp1U5JU3ZTvNkUq3OdWZYJ//8bPjeVCZ8/91zWPL+1z3/4e6HfkYWx+jEAd5qLdyLgmpo/4to/8luKeHyCoDSKDXP781+hjs/tRFtDuIF0iuKtmZubs2w2a5lMxiYmJhiGYZhlHvVYXS4UCkG2qyrx1g6qGm4dlM/nK7uvcnA3AGA5qcfqsvocD3gQb3Nl1wEAgPRRn9XpUBRvVZ0dNwCkk/qsToeieOvcCgAgveKdJt4A4IlkvCtfNMQbANItEW99Id4AkH518RbiDQDpRrwBwEPEGwA8RLwBwEPEGwA8RLwBwEPEGwA8RLwBwEPEGwA8dFfGe3Lqkn319SErFovBCgD4pWnxvnwlZ4+0ttkn/QPuAx1CWm/r6LKJzJlgpWr/gYN2f8tK+/3kn8FKlY574OHHbHjkWLCSpMfp39HP1bErHlpt9963Ipo33nwnOLLe9PRVGxoesdGx47Zn35c2/NOoXbg4GdwLAP5oarzXPN7uYnrij4UgN4r3zMysbXrmORfpd9/fmYh9GOTul16za9euB6tVelxHV3ci3vrZ+v5WzM7O2s5P+621vcP9nG+ODNZ9nBAA+KCp8VZIP9zVZ53PbnO73Ph6PN4nT43bUxs7bfDosG3YvMVyuYVP7dFxq9Y+YWuf3OCOi9PxLasetXXrNy463nqBOHT4O9vy/MvW1f2ie/Ho2/0Fp04AeKnp8VZwe3p32MDefS6YjeK9q2+323FfnZlxER059nNwTzXeOv7jzz6313veslKp5Na1C9/26nbrH9gTBXsx8ZZzf/3tpnfHB+4FY+rSP8E9AOCXpsdbQdUbgtpRnxrP1MVb0Vz/dKeNHf/V3dbuNx7pMMinz5x1O/iz5867dZ2K2frCK/bLbycS8a495z0yOuaOv5kruZyNZ04HtwDAT0sSbxn64Ud3iuJ8ZacbX1e02zd12b/T0+621nUK5eLkVHQ7jLPCrjdAi5Wwb+/ptcODQ4n7498DwN1kyeKt4Or0ydvvfeTirHWdRtFafKcczoGD37rHxYOsXbdCr9Mq2oVr1068AWAJ4y26DE9vPurUhta1u9aVHrVvROryv/DqkniQFXudG39w9Tq3CxfiDQBLHG/RqY6WlWvc+pHvj7pL9HTJX5xOrSjq2mnXBlmhb23riK7Hro33Yq7zBoD/i6bFGwBw5xBvAPAQ8QYADxFvAPAQ8QYADxFvAPAQ8QYADxFvAPAQ8QYADxFvAPAQ8QYADxFvAPAQ8QYADzWMdyaTsXK5HNwCAKSJ+qxOh6J4Z7NZy+cXPhQYAJAe6rM6HYriXSgUXNV1ADtwAEgH9VhdVp/V6VAUb9EdKrsO0rkVhmEYZnlHPVaX4+GWRLwBAH4g3gDgHbMbdz8HhSPsJyAAAAAASUVORK5CYII=" InformativeScreenshot="6b17b72b445bd2503f3c4ebe9afce26e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="308, 278, 71, 45" ElementType="Text" FriendlyName="'Name *'" FullSelectorArgument="&lt;webctrl parentid='menudetails' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='menudetails' tag='LABEL' type='' class='' aaname='Name  ' check:innerText='NAME *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAxCAYAAACS91RNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANmSURBVGhD7ZvbTxNREIf563zUJ0KiBiIiErxwCRZDKoqKtxiJIVFU4g1RQULEhKhEUBDBWkGCiiK0EECRi1IsLZe2jP2dbpdtoS1jGx/KfMmQ7pyz27PfmbO7KW3K6uoq+YLhCw1veHgRPhWeSOEJxEoShpIVIixR0ozhf6NkEKjLQiwuLtLk5CTZ7Xay2WwSYeGXRbooSJqfn/dXk4+E9WiySFUURAmR0WWhqqSioqPLwpoUoiOyGKT4PRFCZMUmBX9E1uZQsoDIio3IYiCyGIgsBiKLgchiILIYiCwGIovBlpE1PTNLz1+0kcfj0TJ84pL1e85Be3Pz6X59o/oAMQjy+SYz2eyjWibA05ZW2pGWTl8Gv2mZAOi3c89+slh7tEwo2A/vg+Oib+ruTNq2PVWPy1euaz3X43QuUJfFSr19/dTU/Iws73vp59S01sojbllZBwrU4Ae+rgnYSJbL5abiYyeVlBu3akLkBgWUnb1Iy8srWjYA9jOZy0Jk4dh4vRncbjfVPKin3AKTOs7Ljk5aWlrSWnnELQsDv1NbRyUnytUsGvNGWYNDw3S4qIQ6uy1UeLSUHI61T2XRLyP7IGUfKlT9jKB/WsY+yskrYsvChLS1v6bSU+fIXHZGTVZdw+N/XooJkYUTrKyqpsYnzWqAG8mqrWtQFbXgcqlBW3s+aC0BWeh/7+EjulR5lbxer8qjysovVFB9Y5MuiCMLjH//oaKq+raaoJnZX1oLn4TIwgngAoqKGRq2r5OFQeYdKaG+/k9qG7NrlBIUMDI6pip0bHxC5bG0j58+Tx8/D4TICr9mWXv7VP9IzDkcNGwf0bb+nYTJAl1v36mSn/DPpDEPSQXFZvrjdKpt5LEkp6Zn9O2gDIjEDcPjF1lRWUXtnV0h7cbX/5uEysIJYjleu3lXyUAeyxI5YyUEo6X1ldrPKABVBbFYpqgyVGVSygK4LeNijaWCPKoHd6LwCzceB4J3P6MAyMW1bVdmjqoykLSyAJZOWnqWyne86Va3bDwCGMFShURUUrgAiM3NN+nPQ+GyOM9ZiSQuWVsNkcVAZDEQWQxEFgORxUBkMRBZDEQWA5HFQGQxEFkMRBYDXZZ8ATc2uiz5andsdFn495D8aCA6uiwAYfJzlMgRIkuIjshiILI2DdFffID8KKPU8e0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DisplayName="Select Item 'Menu Group *'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[row.Item(&quot;SelectMenuGroup&quot;).ToString]" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Version="V1">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="39">
+                          <x:String>--Select Menu Group--</x:String>
+                          <x:String>Soup</x:String>
+                          <x:String>Soup</x:String>
+                          <x:String>Classic Dinners</x:String>
+                          <x:String>Desserts</x:String>
+                          <x:String>Melts &amp; Handhelds</x:String>
+                          <x:String>Omelettes</x:String>
+                          <x:String>Pancakes &amp; Crepes</x:String>
+                          <x:String>Salads</x:String>
+                          <x:String>Desi Delights</x:String>
+                          <x:String>Desi Delights</x:String>
+                          <x:String>Classic Breakfasts</x:String>
+                          <x:String>Burgers</x:String>
+                          <x:String>Beverages</x:String>
+                          <x:String>Appetizers (Veg)</x:String>
+                          <x:String>Appetizers (Veg)</x:String>
+                          <x:String>Appetizers (Non-Veg)</x:String>
+                          <x:String>Appetizers (Non-Veg)</x:String>
+                          <x:String>Tandoori Spl.</x:String>
+                          <x:String>Tandoori Spl.</x:String>
+                          <x:String>Entrees (Veg)</x:String>
+                          <x:String>Entrees (Veg)</x:String>
+                          <x:String>Entrees (Non-Veg)</x:String>
+                          <x:String>Entrees (Non-Veg)</x:String>
+                          <x:String>Rice Specialties</x:String>
+                          <x:String>Rice Specialties</x:String>
+                          <x:String>Bread &amp; Sides</x:String>
+                          <x:String>Bread &amp; Sides</x:String>
+                          <x:String>Parotta</x:String>
+                          <x:String>Parotta</x:String>
+                          <x:String>Uthappams</x:String>
+                          <x:String>Uthappams</x:String>
+                          <x:String>Idli &amp; Wada</x:String>
+                          <x:String>Idli &amp; Wada</x:String>
+                          <x:String>Dosa Specials</x:String>
+                          <x:String>Dosa Specials</x:String>
+                          <x:String>Desi Chinese</x:String>
+                          <x:String>Pulavs</x:String>
+                          <x:String>Biryanis</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="http://littleitaly1.restrozap.biz/ManageMenu#!" DesignTimeRectangle="695, 233, 363, 44" ElementType="DropDown" FriendlyName="'--Select Menu Group--'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-select widget-select-default' aaname='Menu Group *' /&gt;" Guid="37e15099-0405-4b88-b466-199715047da4" InformativeScreenshot="4002e6329df627311938367ca3a70759.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Little Italy@1' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="707, 230, 70, 7" ElementType="Text" FriendlyName="'Menu Group *'" FullSelectorArgument="&lt;webctrl aaname='Menu Group ' parentid='menudetails' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Menu Group ' parentid='menudetails' tag='LABEL' type='' class='' check:innerText='MENU GROUP *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAALCAYAAADY1Bu4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMLSURBVEhL7VVpTxNRFOVf+k0NMW5xCUaFIFtYCwJSZJdFFlErAQPBoCggQbaCIqLI0gIFFaUtJVIKSjjOue0bhtIiTfjYk7zMzJk779573nlvYhDFsRAVKgx+b25iybEceAoSymZfRHxyOjyejQDjx8TkFFKz8rCu8SkZJpw5fwWxl66joLgMno0NpGXnYXh0LBANWN9PwFxWhbaOFzIU3Ose4X2+7QDjx+fpr4iLT0LsxWs4e+Eqahuasb29LXHGfEnpOfj+Y1W+4TUxLUv/Jt9cptXnkW9y8oukFwXWwzrIqbk46hr9eYzY29uTXgZHrOjs6kb/uyHhDwl16vQ5DAyNBBhgZ+ePltgsRVIoNsqGFVgYhbp1Jw1rTqdwkQhlX1xCQkoGVn/+kmcW2treifIHddj0eg/k44KRd7pcSM3MhX1hX4yPn6aQW1gMl3v9SKGqHzYJxzy8t45/kGcj5ubtuBx3GyWVNVIDYw8JRecUlVbqzczMzaPwfrlw4YQi19XdI4n/7u5GJBTdE6pYFre15TuQb3pmFuZSfy7jvATjSyqqNTeMH1uoxscW3TEKLrcb3T19eNbajt7+ASwsOoSPsdls4PD5fPpELc87ZPU4WUOzBUOaFVlw8NZ7+bpXF2rN6dKbjkQo5lNNcT61La7dTMSszY7M3ELcK6mQ1b2RkCyxnJM5gkHe0tZ+pFCcg65M1vpgnNe7FYjaB3cRBWL/3JrU55CjWLhjeQVVdQ0SXFlTL1tKCcVrKEeR42rQ/lxxclwto1B8b3QrEcpRtHv23SI4HCsiEuuiUIPDo/L+1Zu+A/MSylFjmiiMNQo1Yh3XhVKOihQhhdrVtk9pVa2oTmcpJ/xPKIJN84Alx0OaW4XbkWCjPEDZlEK4M4oLZTyjlle+yTlJsTnSTfnCKUxOfYGpoFgcUv/oKd4ODArP3HQQ+zhxoQieTTwwmdgoVKi/nlEoikwXkmOR3Mb8K1E81WgwjvrrqbmVgM2WVrkP99cjeM0wFejvmp60SC0nJlQU4REV6lgA/gHDHpL5MDknzAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Display Index'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Text="[row.Item(&quot;DisplayIndex&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="308, 338, 363, 44" ElementType="InputBox" FriendlyName="'0'" FullSelectorArgument="&lt;webctrl parentid='menudetails' tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='menudetails' tag='INPUT' type='number' class='form-control' aaname='Display Index' /&gt;" Guid="626990db-fd9a-494b-9961-8c7b989e897e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW8AAAAwCAYAAADek/uCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATySURBVHhe7d39U1RVHMfx/rqmn5p+6GGqqcwpralspoeZTENJEmEQQxOJUKPAiYnJokwlUWMIFHwAn0HYMLNNhJVlIbCAb3yOe7fLtiDmlTgz79fMGbgP7N7xhzeHC97zgN2Dvli/VX1ak94y+/36gK3J32hXf71mHac6be+339vwcNI+KN7iPk5PT9tX33xnTUebM8fl1q0/raSs3C5c6rGy8kpL3Bx2+wPdl3tt1VvvutceSaXcPp1bum2H+1p9/lFFlf01OemOSXBt4+MTtn5jsb29Zr3dGBx0x/Teep+FXH9YrP+Kbdi02V1DdW2dtR5rTx8BgMUVabxlf2OTi14QP4VOQbzY3ePiHQjHUdHdsq3Cus6eyxnvuvqv7ceWVtvxyW7rPHPO7Zuc+Zqd1bV25twFF24FPiwcb73mgR8Ou22911zxluzrD3PffBr2WVHpViuv3DXrmwUALKZZ8Z6YmLB4PG6xWMz6+vrmHePj4znjF4QxHL+r136zguJSW/7y61bzxZfufXT8jXfyXJDfXJ1nVdU1lhob+1e8R2f2bdq81a4P3HDh3v35nsw3Ab2/ZuSKuGIelh3vG4NDtuuzPdZx8vS88Q5f/+PPvOCuefW6AhtOjrjjicRN957nL15y2zIwMJDz34jBYDDudajH6rK6GZaJtw7opGQyaVNTU+m988sVv8amo/POXOv3NriZdK7jQWjD8dbMurDkQxff/iu/2LqCIhdQ0et9vLPaemM/u+2w7HjrNYcSCTdr1ix8rnjf6fo1835vwyYr217JzBvAfaceq8vqczjgmXir7DrhbmTHL9c948GhhLslEsxcjzS3uFn2QuKtWOr1a+vqra39hBuFJWXW0nbcHRcd13VkyxVv0cx7+Uurcsb7Tve8tV/35lOpUfcTA/e8ASwW9VmdDmTiraovdMYdUPyeW/Gqu7Wgsfb9QneLRIL4KcAHDx2+fc5MNHWOZsBzxTtvZlYbvKZmuQVFpe6XnQHd295euStzm+Ru462v02w9iPd81x/cNtE43XXWzba7zp53xxX6/MISuzn8z08JAHC/qM/qdCATb91bAQAsXeFOE28A8ATxBgAPEW8A8BDxBgAPEW8A8BDxBgAPEW8A8BDxBgAPEW8A8BDxBgAPRR5vPb9Ez+3W80PGxv5I7wUARCnSeCdHRtxjWh965Al79Onl7qMe/MTjUgEgWpHGW8/m1mIFqdFRt93d02vPvviKHe846bYBANGILN5a5Uar4GSHWs/f3lZR5W6nAACiEVm89VxuLQmW/Tzt5p/abG3+RvcsbQBANCKLt6KthQqy462FDIg3AESLeAOAhyKLt/40ULdNshcA1iK+Ws4se7VjAMB/F1m8FWdFen9jU3rP7b/51i8rtcgwACA6kcVbDh46Yk89v9JOnOp0M3HNup9ctsItFAwAiE6k8dZ/xmnYd8AF+8GHH7NlK1+z1mPt/JkgAEQs0ngDABYH8QYADxFvAPAQ8QYADxFvAPAQ8QYADxFvAPAQ8QYADxFvAPAQ8QYADxFvAPAQ8QYADxFvAPAQ8QYAD+WMdywWs6mpqfQWAGApUZ/V6UAm3vF43JLJZHoLALCUqM/qdCATby1ppqrrBGbgALA0qMfqsvocXhc4E2/RAZVdJ+neCoPBYDD+36Eeq8vZC7rPijcAwA/EGwC8Y/Y3wib/OmXfpyoAAAAASUVORK5CYII=" InformativeScreenshot="54885947ee4165873bd3c24e9f2a9564.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="320, 335, 67, 7" ElementType="Text" FriendlyName="'Display Index'" FullSelectorArgument="&lt;webctrl aaname='Display Index' parentid='menudetails' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Display Index' parentid='menudetails' tag='LABEL' type='' class='' check:innerText='DISPLAY INDEX' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAALCAYAAAAtKpAIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALtSURBVEhL7ZXrT1NBEMX5K/1mTNAQNYoGNRFQHlIoj1Iob5GHVSASiSiKIgoiIYCgvN9SBBGEtpRCIS1KOPYMbL0tt61+70k27d7ZnZ397exsHGIKqxicCAqCY1taxrmEK4i/dA0JV5OQU1CM9Z8bYhseGUPry9c4OjpCx7tunL98XcamZGRjy+US+5mzFwJz29o74Nnfh6WiGq5tt/hQOjj4hUyjCY3NLdL/fXgIS3k1xienpU+7ubQSM3ML0qcYW83DBni9PmTk5GNw6POJ5Tg2rhMtfhUf28jYBAqKywJr2h1OGPLMcDid0qdOwWEAShubdqRm5mD1x1oAjtu9g+z8IvklqGcvXqGrpzdgp7g5k6VCNqcHZ/7rIhJvpojvXY9HvnEsgXAu/5dV1Qg0pVA4t1IzAhvRwokWv1ZLyyvIyi2UGKyNzegfHDqxHCsiHOpNZ5c4Vc7piAvOzi8IHCXt4txUUWmV/1SmdOE0tzzHx75+VD6ox9jElHw79M+ptTZiYmpGwBCgVlo49MnsZZ9rhYNDhcavlRxuWzvyzCWoqK4LOgwqzmazgc3r9eo6Vwtrna+urcOQb5b0bHjyFD6fT+xJt9NkwzeS01BjbdC9Vnv+b7mFJdi0OwRM/eOmAGSuz4wiJMLSKhSOw7mFukdNGP4yGhGONn51rZLTDXDv7Ird5dqWNadn56RP2e12YRI1czq7eiKSb2ltk0zQs6uNaOEwM4ymYtnc8sp3pBvyJECK/u7XWrG49E36WoXCoU/WOp46sygcnGjxM3PuZuVKzTuVOSe/olDnenfWueWSK6PIf+jtkyz5FzgMhv5ZiAf8BZXNaLKgb+CT2CnaGUeo9OBQzJz4i4m6cKLVHH5nbfR49iTjo9YcVe3Z7twzyhWilHNu8O377uMx/qA4Rr1WenDS/KeifPKU+CKwmCuxtpT777u6Rv8Lh/OYbQpOpPi1r9Xo+GTQC0mQfEG33X+zPAhOTMGKwQkr4A88dhMs+JRgGAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Price *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Text="[row.Item(&quot;Price&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="695, 338, 363, 44" ElementType="InputBox" FriendlyName="'0.00'" FullSelectorArgument="&lt;webctrl id='DeliveryPrice' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DeliveryPrice' tag='INPUT' type='text' class='form-control' aaname='Price *  ' /&gt;" Guid="1cd19f29-a45b-4ff7-8aef-fb8616d68d9c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW8AAAAwCAYAAADek/uCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU2SURBVHhe7d37b1NlHMdx/zpjTLxgREFRcOqAcJkwEFgGiCCwuCATBYTJhkMQAshlgCyiKAzRCSzIdWxlXMvNrd2Fjsn4us+z9qw72RzEEnhy3q/kSdtzzhp+evPk6WmfZ+x/aIo1W3nlBvf8wYMH7nndsRPuUefk8pWrVrLsc0uluoLjseZLtqhkmbUmEu4a/e2O3Xtt1doKa2hsCt5zKN3d3VZRtcnemzTNTp46Yz09PekzABANOY131aYt9mvtbwPiffPmLVv86XLr6OwMjq/7ZqOLfJjeozF2cdh4H6o9avt//MkOHqrtffzZ/rl/P30GAKJhQLy7urosHo9bLBazpqam/xypVMqFePrsuW7GPHfhUltSutw6O+/al2vW9T4vc8enz55nv9cdc++fiXd23MN0fGz+ZMubWGBTZxTZpd6Z+2Cux29YW3u7e97c3Dzov5HBYDB8Hmqxmqw2hwXx1kldmEwmH3oZIhPisLUVVVZ/8pRt3rbDtu/a42bUMtzMW4Z6TwCIGrVYTVabwwEP4q2666JHMVRoM5FOJNus+OMlbo07+/hQa96lZSsfas0bAKJEbVajswXxVtkf9YO/4eItR47+YZ99sdqtS2cfP332nE2bVWx5E6bauPFTbHV5pVty0fnMsomG1rQBIMrUZjU6WxBvra8AAJ5O4UYTbwDwAPEGAA8RbwDwEPEGAA8RbwDwEPEGAA8RbwDwEPEGAA8RbwDwEPEGAA89lnhrc4SW1oQlEsmH+m1tbczgrk+2Bb84mE3H9HOvuka/dwIAUZfzeP9y+IiNGDXWXnrtLXth5Bgb8+7E4Menwu73hn37zmp7fsQoe2X0OPc4pXCO3b5zJ32FWbKtzeYvKrHnXn7dXn0zzz1+9fV6NlwAEGk5jffNW7ctf8p0O3zkqJst37vX7TZiKF6w2M2uw85faHS/GHiu4YJ73d7R4TZx0N8o7LJ56w6bM3+ROyfnGxrt7fcnBRs6AEAU5TTe2vJMob2bSqWP9G17NmnarEFn399u3up+HjZ7qeTs+QabXDjbWlpa3VZphXP6d97J0N+tWF0+6BILAERBTuO9bWe1la1ck37VJxPguuP16SN9FF6F+/vde9NH+mTH/u+WFrf1WTj8+k9iqNk8AERBTuOtcIfjrcAqtOF4Z46H460PJT/4sNgFW0MbMITjrfci3gCijHgDgIdyGm+FOLyGrVv8dAfJ8fqT6SP9FHottWS7eu26TSyYac2XLruQa9mkMXYxfbZPzYGDNm/h0kF3UAaAKMhpvBVofdio+7szNGueUDDDRTls9979tmBJqbsrJUO7yCv2ir7irEjvqzmQPtu3Vq4PK8vXsykxgOjKabz1JRuFV7Nv3autYBd99IktW7HK3fqne7Or99XYX6fPuOuvXL3mbvvbuGW7+3DyQmPM3Wqo2wMztOHwG++Mtz+P17uZuGbdo8flu9sMASCqchpvuR6/4YKtL9zoSzqlZSutNZFw59rbO6xgZpFVbvjOvRbtGq/g68s3+nJPRdXGAcshCv6uPT+4YD/74ki3s7x2oOc2QQBRlvN4AwAeP+INAB4i3gDgIeINAB4i3gDgIeINAB4i3gDgIeINAB4i3gDgIeINAB4i3gDgIeINAB4i3gDgIeINAB4aMt6xWMx6enrSrwAATwu1WY3OFsQ7Ho9bMtm/Iw4A4OmgNqvR2YJ4a0MElV0XMQMHgCdPLVaT1ebwHr5BvEUnVXddqPUVBoPBYDy5oRaryeFwy4B4AwD8QLwBwDtm/wKqdACo5pOEZwAAAABJRU5ErkJggg==" InformativeScreenshot="fc974f3d22bffd58b798cdf04eb03e42.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="707, 335, 35, 7" ElementType="Text" FriendlyName="'Price *'" FullSelectorArgument="&lt;webctrl aaname='Price   ' parentid='menudetails' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Price   ' parentid='menudetails' tag='LABEL' type='' class='' check:innerText='PRICE *' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAALCAYAAAD8zZR4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGtSURBVDhPzZPpSwJRFMX7Q4Mioj1DC7KwPlRkkZjtUqKRkVQkYRQEYYvYvhG2EI1NFmULZIuNWHqad0sZpybtmz948ObMe3fOO3NfDrKYrDJ3zgcQDr99P8nMcX4eeUUVKCitomGzjyESiaDHbEFuYRlp1XWNODw+ofWW4VHaw2CaulaHghIV8osrYR352iuvOb+wSOul3D88YGN7F5NOF9zLHgRv70j/YY59kBGPx2m+tbOXYiJweYV2YzcEIZLU/fwFWtqNeAyFaA3bOz0zh4EhG07PuGRNJaLRqBiEA4Xlahz4jhCLxUj/05zdMYEV71qKuVvxVK0dJryGw0mdpcQOIYfVOPOfpzXn8a6Libqx5PFSsu8fH6TncBwHNgRBoA9ptA104obmNugNJuqBvkGrOO8iXaNtxMbWDm1OmJOal8P0xG9V1dTjQkz+N65vgnh+eaE5z/PkSTE5KUM2O/YPfBifmobTNUuJMNIlx1CqmQkZmUuYCD09Q9ekpx6T6ko9Z+jqz6jnlPiXOcbq+iY6e83UF1JdflvNlmFqCfY+3W1VIsVctpHF5oBPHzsuUmKFcswAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Text="[row.Item(&quot;MenuItemDesc&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="308, 398, 363, 80" ElementType="InputBox" FriendlyName="'TEXTAREA Description'" FullSelectorArgument="&lt;webctrl parentid='menudetails' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='menudetails' tag='TEXTAREA' type='' class='form-control' aaname='Description' /&gt;" Guid="8920d5fd-8175-4ce9-ac02-e10ce858df61" ImageBase64="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" InformativeScreenshot="f79fd67e19bdfa6db154b7c9ff624e7d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="308, 398, 107, 45" ElementType="Text" FriendlyName="'Description'" FullSelectorArgument="&lt;webctrl aaname='Description' parentid='menudetails' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Description' parentid='menudetails' tag='LABEL' type='' class='' check:innerText='DESCRIPTION' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAAxCAYAAADUQffnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASpSURBVHhe7ZmLT1RHFIf964wx2lYDKoqBUoqKIqAU0CDEQqslKqEiPqo2GmNi46tqW1+11VhK0SI+kceuvBQfiLuuIlLgdH+HOzf3Tpe1CT7uSc6XbGDnnjs5M9/MnCFMI0UsKk8wPnnDw8PU399P4XCYQqGQfgL+ceVBHKRFo1EaGxtzWpUg48rDjoM4RQ6uPOw63XGycOXhDFVkofIEo/IEo/IEo/IEo/IEo/IEo/IEo/IEo/IEo/IEo/IEo/IEEwh5r14NUyQSpX9GR52W/4KYwWcRGhkZcVqCAXJG7sjvfTMleZjMz3ILaPpHqe4nc0keXW5opPHx8UljytZ/zYN9+XKINn9bT3PTMmnhp0tozoIMOn3ugvsueND/kErWfUkfz1tMGTkraFbKQqrcuJkePxng53b/Mz6Zz/F4D4TCXVRQXMZxyWIRl5qe5T4zH5Nrbf0uOnbyZ+4TPItEaFPtNpqdsojzQn7oq/f+AyeCOB7PHj567LRMgHb0N1WmLA8Tg4EDTHp3Ty8VlpTR9u++51Vpx3g5dPg4VdfU0evXE7upsekqD7ant4+/h7u6+fupX866uxL/8d+7/yDlFhbTk4GBhDkcPnaCisvW8+Kw5SWLNdiigLft6eAgrVhdynkgH4C+fv39EufbEQpzG+Jnzk2LS673nSqBlGfASsvJW0W3W+8mlYcBHPnxlPNtYgIi0ed8NI7GB7tl63Y6+MNRbveCnXDoyHFqutqcsH+vMO/vb4o1vEkeFh12nX3MI8+jJ36ir6preEEivqp6C1VUfUMXLzc4UQGXh0HU1O1gMZPFgDPnf6N5i7Pp/IWLvpUP8N7KorXUGb7ntCQmUf+YqLzVa+h5LOaTM1ksTopY7IXTklweFg6O0r+u/O088YO+lxeW0KP4AjaSOjrDtKq03D3qAy0PYGcgQcTYNc9MDCRfu36TSssruWYUra2gO61t3I4+s5blJ+zbC/pfml9EGzbV8lGNiU1ZlOVOLt73ysteXkjp2bncN36mZeZQc8sNjjUkk2fGc6W5xXniB8/NnBhJZkdu3bGbd2ug5f3fnecFg8IOxGS2dXTyDQ47r7Wt3YlIDPpHXMuNWywMQlArDbY8E4vfcUQjV5tk8lDjyis30qU//nSe+MFJkVtQ7Nt5ACcL3mtobAq2PNQ8DAASJovBpN252059ntuZOZKwqlHztu3ay5cCe4IxEag7ds3DAsDqNisc2PIS5WKTTB7AT1PXvCBP1GjUauRvSzLHZ318XIGTh+TvdfXEE1xHO/fs4wlMNmEQsKaiimIvJupNW3snX3RMLG6TqB84gs2tDrUJu3pZ/hcJb5u9fff5SLx+8zZ/R/vblofFg0sI2kytRH44GrOWrqSu7h5us+UZuSgdgZDnrWcz5yzgiwKOBrNb7Bh8zN9O5to/OzWd2+dnfO57Fww8HeSrtonBz7qde/jvLGALwbuYRNRPTOy7kAeGhoZo974Dbl4YO3ajuZQAWx5ATsjtg8tTPiwqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTzAqTyxE/wJZQKXxCJYmrwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,136" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+                      <ui:SendHotkey.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="b6f39eea-2280-4032-9d3c-f04d80597ff8">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SendHotkey.Target>
+                    </ui:SendHotkey>
+                    <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Hover_1">
+                      <ui:Hover.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Hover.CursorPosition>
+                      <ui:Hover.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5a478769-47d4-4ff0-a02b-0b4edce1c4c5" InformativeScreenshot="85f568d69562b74243e49b4e33d61345" Selector="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span' isleaf='1' parentid='menudetails' tag='SPAN' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Hover.Target>
+                    </ui:Hover>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="308, 489, 34, 17" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span' isleaf='1' parentid='menudetails' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='menudetails' tag='SPAN' class='slider' aaname='' /&gt;" Guid="71793ffb-1e69-42f2-8ad0-4e125bd8e02f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAVCAYAAAAq05ytAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHSSURBVEhLxZYNU4JAEIb7//+rLMW0pqmBFHX8RMs0m2lGwY3njiNIVAqNd+Z18O5wH3f3Di4kp7bbrfJ/aS+YATnmcykTjICbjS9j702enJHU73tSbXRSrjW7yha+6+V246Evdmsik+lSfD+IIu5qBwyo6cu7grm5dUO35bqOW5Hbaoy5FGAGxDEDOXtdRZHTSoEBNRjNVUCCV6yWXNWe5bLqhLYjO2qMOdYUhcPD8SIi+FYMZjJFILJSsQCyxe15svr4VPOYa8aYYw1rDdxvy5r0z8wpMALSU7p8Gspqugpin5hjDWuTmcsKmseUNdlzMRiNTt9QIrJxCMqINTpzlNUtnDU2hFEMxu7jn9M/lCqvWMs9p8gau9UoBqOM9AvNnSdbRjprTrrXMoLmMeU0ugAK66bXZeR7XrGWe7i3KBg2isF0xsoFS2WMD36cHiu7lJk9NpqwK8tt/sxduV5vwsluacfF3nMMe7Ol+udlHLCZJz8CLAgC6Q/nql8ISDYoFRAGnmvGdKZO80g6+KxEBs6bLcIbOqpE9A/NDYj26R7iud8ukIGj54bjuTzagzCoPuO0i732APOn9zFkygagse/7yskxs+4cygRDJugxn0ciX9Xhm0/ymXmLAAAAAElFTkSuQmCC" InformativeScreenshot="21faeb21dfe0abb3a349cdf8744ef06d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopRight" X="-10" Y="9" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="308, 591, 34, 17" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span' idx='5' isleaf='1' parentid='menudetails' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='slider' isleaf='1' parentid='menudetails' tag='SPAN' aaname='' /&gt;" Guid="86540145-9981-4cc3-9b86-ad0dbd2ba47a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAVCAYAAAAq05ytAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHSSURBVEhLxZYNU4JAEIb7//+rLMW0pqmBFHX8RMs0m2lGwY3njiNIVAqNd+Z18O5wH3f3Di4kp7bbrfJ/aS+YATnmcykTjICbjS9j702enJHU73tSbXRSrjW7yha+6+V246Evdmsik+lSfD+IIu5qBwyo6cu7grm5dUO35bqOW5Hbaoy5FGAGxDEDOXtdRZHTSoEBNRjNVUCCV6yWXNWe5bLqhLYjO2qMOdYUhcPD8SIi+FYMZjJFILJSsQCyxe15svr4VPOYa8aYYw1rDdxvy5r0z8wpMALSU7p8Gspqugpin5hjDWuTmcsKmseUNdlzMRiNTt9QIrJxCMqINTpzlNUtnDU2hFEMxu7jn9M/lCqvWMs9p8gau9UoBqOM9AvNnSdbRjprTrrXMoLmMeU0ugAK66bXZeR7XrGWe7i3KBg2isF0xsoFS2WMD36cHiu7lJk9NpqwK8tt/sxduV5vwsluacfF3nMMe7Ol+udlHLCZJz8CLAgC6Q/nql8ISDYoFRAGnmvGdKZO80g6+KxEBs6bLcIbOqpE9A/NDYj26R7iud8ukIGj54bjuTzagzCoPuO0i732APOn9zFkygagse/7yskxs+4cygRDJugxn0ciX9Xhm0/ymXmLAAAAAElFTkSuQmCC" InformativeScreenshot="a3aed10f446887985d5dc5908e24f007.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopLeft" X="17" Y="13" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="420, 591, 34, 17" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;span' idx='6' isleaf='1' parentid='menudetails' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='slider' isleaf='1' parentid='menudetails' tag='SPAN' aaname='' /&gt;" Guid="de9d015a-a00c-4870-831e-abb50e3811ef" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAVCAYAAAAq05ytAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHSSURBVEhLxZYNU4JAEIb7//+rLMW0pqmBFHX8RMs0m2lGwY3njiNIVAqNd+Z18O5wH3f3Di4kp7bbrfJ/aS+YATnmcykTjICbjS9j702enJHU73tSbXRSrjW7yha+6+V246Evdmsik+lSfD+IIu5qBwyo6cu7grm5dUO35bqOW5Hbaoy5FGAGxDEDOXtdRZHTSoEBNRjNVUCCV6yWXNWe5bLqhLYjO2qMOdYUhcPD8SIi+FYMZjJFILJSsQCyxe15svr4VPOYa8aYYw1rDdxvy5r0z8wpMALSU7p8Gspqugpin5hjDWuTmcsKmseUNdlzMRiNTt9QIrJxCMqINTpzlNUtnDU2hFEMxu7jn9M/lCqvWMs9p8gau9UoBqOM9AvNnSdbRjprTrrXMoLmMeU0ugAK66bXZeR7XrGWe7i3KBg2isF0xsoFS2WMD36cHiu7lJk9NpqwK8tt/sxduV5vwsluacfF3nMMe7Ol+udlHLCZJz8CLAgC6Q/nql8ISDYoFRAGnmvGdKZO80g6+KxEBs6bLcIbOqpE9A/NDYj26R7iud8ukIGj54bjuTzagzCoPuO0i732APOn9zFkygagse/7yskxs+4cygRDJugxn0ciX9Xhm0/ymXmLAAAAAElFTkSuQmCC" InformativeScreenshot="5e2c292679be2745ae9071391e96ac08.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopRight" X="-16" Y="7" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="1006, 656, 68, 35" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl id='menuitemform-btn' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='menuitemform-btn' tag='BUTTON' type='button' class='btn btn-primary' aaname='Save' check:innerText='Save' /&gt;" Guid="821b0cb5-b4e6-4b57-b177-3396d230cb0a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAnCAYAAACsTw7IAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN9SURBVGhD7ZrPSxRhGMe7denYX9C5Q/fo2C06RHQIoroUHTtUEBVCSL+EKE9JGFRakkZBliSGaSmpZVqCQj9M80eYP9bdnZmdnZmn9/vsPrMzOmPgTiTs+4UvM++Ped33M8/7vLPubCKtNaUB/UUhQM7UB8rU76ZU1RZKXdhcWVZzxtzBICgfEBoqEsxKKwZBSD4gjpyoCyrQYCHyAenoCVixEJUARXWsYIs0oBiLNKAYizSgGIs0oBiLNKAYizSgGIs0oBiLEgdkPDlO7uwn8qxl8swlcibfUfbunsi+G9miRAEZjw6Rl50nZ3aYzBenKNdbS56xQO7Cd8rU7Yq8ZqNalCigXP9tjhzjyTG/znp9SX35GyDz6Qkup2u2kT1QT97yTCHCfvZz1OW/dpD16iKZbWe4zmw96Y/B46g2Z7KPjObDXOZ+M0M8hpf+RfbgfR47eE05FiUL6O118uwsWV1XItuXq7cyCHJsciZ6yf7YwEdEGSZqv79D2Xt7ecL5seeh65zpQXLnxih9Y7uCfpnINngpW53VZI+08I0BMLQH/+Z6LUoUULp2B39IcvPkLk0oAI2UDfyXwHx5lrxchuyhxtB1KJPnMiCUAQeQAAtlRA2Wbq6vjjK3dpK7OE7Ojx4GJ2MAFMa2uq/5deVYlHiSxoc22077kYFoyY+1cj0AIFJkmYgZQDGCUGaQVsqfrD38UI01T0bTQTJajhaiRSV/RKDvz82hMcq1KHFAQTOU4Sa+s5g0AypONNgPZdTL5LBMsJwA2T8ff1PoC0AKBBI/NoOVRq4Kjr1eixIFVEikalt/cMCvQ8L2zEXe0RARnKNWLAOUEWnBu4/lxMuqu4aPVvt5rpccZY889vtyfeN+vt5oORKqX69FyQJqP8cA8t86OR/BOMcE8QiArR533sv+JqujincdHL307CpA2YZ9XI9c5s5/CSXf/OizwhLsuspRiucsd25U7YzTft4q16LEl1iu52Yh9xSF82DY405jyZDnFdoVUCRpLzUVAgRjWaEfclCwHmCRyMnJ8RjoAzjBx4tyLfqnOWgtI7rKvdscPQo4xopqL8ei/wZoo1ukAcVYpAHFWKQBxVikAcVYpAHFWKQBxVikAcVYVAKkf5svOeq3ef12R8mRb3fo94OKVgwi3w+C0MCRVImg1Jwx9yAcKARIa7U0oDVF9AdKRHICrciAjwAAAABJRU5ErkJggg==" InformativeScreenshot="490aab87c1454936c005038546a59768.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                    <uix:NClick ClickType="Single" DisplayName="Click '+ Add Menu Item'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c0160ed2-47b4-4ce7-be2e-40ed7ac685cd" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="1174, 349, 153, 35" ElementType="Button" FriendlyName="'+ Add Menu Item'" FullSelectorArgument="&lt;webctrl parentid='groupmenuItems' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='groupmenuItems' tag='BUTTON' type='button' class='btn btn-outline' aaname='+ Add Menu Item' check:innerText='+ Add Menu Item' /&gt;" Guid="278f1a52-d9e7-4448-8e42-0332d2a40d46" ImageBase64="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" InformativeScreenshot="3bf70e7365bc125b0abb46baacf8a14a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d4a55fe2c851d6765e8d1deca5e85d76.png" Selector="&lt;html app='chrome.exe' title='Little Italy@1' /&gt;" Url="http://littleitaly1.restrozap.biz/ManageMenu#!" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

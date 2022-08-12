@@ -1,0 +1,110 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Logout" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="566,1004" sap2010:WorkflowViewState.IdRef="Logout_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Logout" sap:VirtualizedContainerService.HintSize="476,939" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Little Italy@1" sap:VirtualizedContainerService.HintSize="434,847" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="440d799b-01d4-4232-9cb3-8962fa1d4dda" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,631" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="440d799b-01d4-4232-9cb3-8962fa1d4dda" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="1331, 137, 28, 28" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl parentid='changePasswordDropdown' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='changePasswordDropdown' tag='IMG' type='' class='' aaname='Profile Icon' /&gt;" Guid="2ff82264-3b4e-4bae-a5dc-ec77e7aedefa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL9SURBVFhH1ZdNS3JBFMel8AO0CYkWSVuNoEWE+AGiWqZGQkGLFpEh4qpNn8BAKGoh0tIXTBARixBcRQuxRYuU3NiiD+D+PPzHM3a9d+6LPj3E84OLnuPMmf+cOTN3dNEv838JuL29pbW1NXK5XLSwsCC++3w+crvdwre7u0v5fJ5bO8ORgGQySV6vVwwIEWZoBcZiMfZaYymg2WyS3++n09NT+vj4YK89b29vtLm5KYQ8PT2xV42pgGKxKAJMmlIthUKBZmZmKJPJsMeIUoAcvNvtsmd6+v0+XVxcsGXEIABpx+Cfn5/s+RkajYZyGQ0CsOalUoktc+r1OqXTaZHel5cX9pqTzWYpFAqx9c2YgOvra9re3mbLHGQoEAiI1KLyd3Z2LNMsWVpaEpnQMiYAgdvtNltqWq0Wzc7OsvUNBL2+vrKlJpfLie2sZSQA1Y49bAdSrjoLkIGrqyu2zFleXqa7uzu2NAJwilkdMhK0MROAmrDj/Px87JAaCUD6nfD4+CjWXA+WAIVpR7VapY2NDbamEAD0RYiacFKEYDAYjI01lQCg3YYozEmYWsDz8zPF43FRL6oHv1kdu5KpBOD3xcVFSqVSYseoHixDMBgkj8fDvdRMJADHp9P1lUDk+vo6W0aUApBC1faC7+TkhC3nzM3NKV9miIexJCMBSKHqIEJjeXxubW2JTzPe399Hk0A/xNSDMbT+sbzPz89Tr9dja8j+/r54RwC7OkFgOTuVAMTGGFrGIt7c3NDZ2RlbQxKJhFhT3GwgAJ/6B4dTpVIZCajVakoBiC0nIzFMaXV1lR4eHtgaEg6HaW9vj6LRKB0eHtLR0REdHx+L2sB1Tf+gTSQS4d5D8IpfWVlh6xuDgPv7ezHTr68v9vw9uNwgJi47epSLenl5KTr8xJUMMRAL1zwVplVVLpdFR/06TgL6Wg0OTAUAHL3443FwcECdToe99qAt+qCvKu1aLAVIUL2YySR/TPS7yQxHAiRym2EA1aPaenZMJOBf8MsCiP4ADPVLsFQp5BsAAAAASUVORK5CYII=" InformativeScreenshot="fff55cf7326c1f6763134843ed7b927a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="440d799b-01d4-4232-9cb3-8962fa1d4dda" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://singapore.restrozap.biz/ManageMenu#!" DesignTimeRectangle="1167, 278, 214, 24" ElementType="Text" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl href='/AppConsole/Logout' parentid='ul-changePasswordDropdown' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl href='/AppConsole/Logout' parentid='ul-changePasswordDropdown' tag='A' type='' class='dropdown-item' aaname='                                                                          Logout                                 ' check:innerText='Logout' /&gt;" Guid="d5425464-1197-434c-b421-c3e5a2081af9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANkAAAAcCAYAAADsmxpxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPRSURBVHhe7ZrZTxNRFIf5J018MvHN+GBC4oPRaHwwhKAmCiKuD4oaF6wGXJBNKQUELIJAQYRCSytt2Qq00JVjf8fccaaZYUmcZAbOJF8od373dB769d4504qXx4+RIAj7JxyNUzS2TIvxVcJRsddhVkQQBGtEMkGwGZFMEGxGJBMEmxHJBMFmRDJBsBlHSBbs6qSdQoEvYLcju7lBQ3dum9YQBKfiCMnWFxZorvuL6TmF5+QJ2ohGWEiz83uxMjPDmJ1zEv6H92l5epr/mp0X3IdjJNuPPCo31dJMI42PTDNWYC4wO+ckJl43UX5ri/+anRfch6skS4bmabajneZLq142laLRp09Mc2bsJtnQ3QZamwtSLp2mzMYGLfT3UefF84bMSOPj0vwwC5CKxyngaeJriQwOaJmW06f42raTSc4hj3nqvNUqpepgHKs1ts6bsRitBmdlRTsEuEoyBbaOoR7vgUSzkizwxkOFbLb04Y5SyNdD0aFBli29lCBvdZUhk4rHtEx2c5O219a0mq1nK/lLIJ/J0OL3YZr3dlMyHKJiPq9tha1WqfjYD67ju1ZDsdERKuRyPDb3uYvH9FnBfThWsrHnz/iDaklJMszLpVPkf3DPMNcMZJUQio4L53jFwIoDSdQ4Vg/UDfX6OJNKJCwyaa3m9If3LOLkW4+WwZdBfHyMVzYIu5dkeG2VEdzLkZZsoL6OcqUPNLZr+nGALFai3TI4r2pClK2VZeq6fMmQgSyYP/7qhUh2RDnS20UWqCTpr0+thnGg8rtlVoNBrSZEwYqHlU+f0UtjJZBIdrg50o0PbOGwlfs97DeM916/Spn1JH/4VWZpMmDIqHFVE1tL3Kd9rbtpyIX7+3hbOdhQz9cLgX6+a9bOq0cTItnhxVWSqdz/bOFDAtxLQV50ByEYchBGPfiO+r9RMZfjLO7LkEE3EvNUTSUmhMFr1JrtaKNCJsPNDGTQsURnEtvK/tobWjeyWChodZSIM+1tLCDGBHfjGMnsfhiN99Af6PphtVBbT3T0+NjZ4a6hXmLIgNUOczhSLFJiYpwSgQlNDjBwq5YbKaiBA3kIVt4wQX0+Srm/rfp/286PlWdoaWqK30Ndo5oruBNHSAZxnPCzKmwB9UKUAyF9NdUsHf7Xy6EHNVCrfFwP7t3K79+Ew4kjJHM6WI3WIxHDA2r9fZs+KwjliGT7AI8I0GHEvVS4r5eBYGi+yA+Whb0QyfYJWvlLU5P8syvIhdfeqiumWUHQI5IJgs2IZIJgMyKZINiMSCYINiOSCYLNiGSCYDMHk6yi4g//s8t3n7ltcAAAAABJRU5ErkJggg==" InformativeScreenshot="05aaa5519d3a4888dae8177881b76413.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Singapore Restaurant' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="7595e1d5a760ce520bf11b871237d859.png" Selector="&lt;html app='chrome.exe' title='Little Italy@1' /&gt;" Url="http://littleitaly1.restrozap.biz/ManageMenu#!" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
